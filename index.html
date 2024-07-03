@@ -24,7 +24,7 @@
       <div class="footer-textarea-container">
         <div class="exclamation-container">
           <img src="./assets/exclamation-circle.svg" alt="Simbolo de exclamación">
-          <p class="exclamation-message">Solo letras minúsculas y sin acentos</p>
+          <p class="exclamation-message" id="exclamationMessage">Solo letras minúsculas y sin acentos</p>
         </div>
         <div class="buttons-container">
           <button class="button-1" id="encryptButton">Encriptar</button>
@@ -33,15 +33,15 @@
       </div>
     </section>
     <section class="encrypted-message-container">
-      <section class="missing-message-container">
+      <section class="missing-message-container" id="missingMessageContainer">
         <img src="./assets/missing-message.webp" alt="Ningún mensaje de encontrado" class="image-missing-message">
         <p class="missing-message-title-1">Ningún mensaje fue encontrado</p>
         <p class="missing-message-title-2">Ingresa el texto que desees encriptar o desencriptar.</p>
       </section>
-      <!-- <section class="encrypted-message-found-container">
+      <section class="encrypted-message-found-container" id="encryptedMessageFoundContainer">
         <textarea name="" id="" class="textarea-encrypted-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum atque nesciunt odio nulla quas sequi quidem iusto temporibus corporis. Iste aperiam recusandae officia? Voluptate nihil aut asperiores sed illum magni eius.</textarea>
         <button class="button-2">Copiar</button>
-      </section> -->
+      </section>
     </section>
   </main>
   <script src="./app/app.js"></script>
