@@ -1,6 +1,7 @@
 const encryptButton = document.getElementById('encryptButton')
 const decryptButton = document.getElementById('decryptButton')
 const textareaMessage = document.getElementById('textareaMessage')
+const textAreaEncryptedMessage = document.getElementById('textAreaEncryptedMessage')
 const exclamationMessage = document.getElementById('exclamationMessage')
 const missingMessageContainer = document.getElementById('missingMessageContainer')
 const encryptedMessageFoundContainer = document.getElementById('encryptedMessageFoundContainer')
@@ -42,6 +43,28 @@ const validateMessage = ({ message }) => {
   return true
 }
 
+const encryptMessage = ({ message }) => {
+  const letters = message.trim().split('')
+  const newMessage = letters.map((letter) => {
+    if (KEYS_OF_ENCRYPTION[letter]) return KEYS_OF_ENCRYPTION[letter]
+
+    return letter
+  })
+
+  return newMessage.join('')
+}
+
+const decryptMessage = ({ message }) => {
+  const newMessage = message
+    .replaceAll(KEYS_OF_ENCRYPTION.a, 'a')
+    .replaceAll(KEYS_OF_ENCRYPTION.e, 'e')
+    .replaceAll(KEYS_OF_ENCRYPTION.i, 'i')
+    .replaceAll(KEYS_OF_ENCRYPTION.o, 'o')
+    .replaceAll(KEYS_OF_ENCRYPTION.u, 'u')
+
+  return newMessage
+}
+
 const setDisabledEncryptButton = () => {
   encryptButton.setAttribute('disabled', true)
   encryptButton.style.cursor = 'not-allowed'
@@ -69,7 +92,24 @@ const setEnabledDecryptButton = () => {
 document.addEventListener('click', (e) => {
   if (e.target === encryptButton) {
     const message = textareaMessage.value
-    
+    const newMessage = encryptMessage({ message })
+
+    missingMessageContainer.style.display = 'none'
+    encryptedMessageFoundContainer.style.display = 'flex'
+
+    textAreaEncryptedMessage.value = newMessage
+    textareaMessage.value = ''
+  }
+  
+  if (e.target === decryptButton) {
+    const message = textareaMessage.value
+    const newMessage = decryptMessage({ message })
+
+    missingMessageContainer.style.display = 'none'
+    encryptedMessageFoundContainer.style.display = 'flex'
+
+    textAreaEncryptedMessage.value = newMessage
+    textareaMessage.value = ''
   }
 })
 
