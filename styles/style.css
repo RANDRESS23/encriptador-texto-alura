@@ -28,7 +28,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--light-blue-100);
   transition: .3s ease all;
   display: flex;
@@ -98,7 +98,7 @@ body {
 
 .main {
   width: 80%;
-  height: calc(78vh);
+  height: 78vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -392,5 +392,37 @@ button {
   to {
     opacity: 0;
     transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 80%;
+    flex-direction: column;
+    height: auto;
+    gap: 50px;
+  }
+
+  .textarea-container {
+    height: 70vh;
+    width: 100%;
+  }
+
+  .image-missing-message {
+    display: none;
+  }
+  
+  .encrypted-message-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .encrypted-message-found-container {
+    height: 50vh;
+  }
+  
+  #toast-container {
+    top: 35px;
+    left: 30vw;
   }
 }

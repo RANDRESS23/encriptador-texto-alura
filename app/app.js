@@ -173,10 +173,12 @@ document.addEventListener('click', (e) => {
     exclamationIconDark.style.visibility = 'hidden'
     exclamationIconLight.style.visibility = 'visible'
     
-    missingMessageImageDark.style.display = 'none'
-    missingMessageImageLight.style.display = 'flex'
-    missingMessageImageDark.style.visibility = 'hidden'
-    missingMessageImageLight.style.visibility = 'visible'
+    if (!window.matchMedia('(max-width: 768px)').matches) {
+      missingMessageImageDark.style.display = 'none'
+      missingMessageImageLight.style.display = 'flex'
+      missingMessageImageDark.style.visibility = 'hidden'
+      missingMessageImageLight.style.visibility = 'visible'
+    }
 
     const isToastExist = document.querySelector('.toast')
     
@@ -220,10 +222,12 @@ document.addEventListener('click', (e) => {
     exclamationIconDark.style.visibility = 'visible'
     exclamationIconLight.style.visibility = 'hidden'
     
-    missingMessageImageLight.style.display = 'none'
-    missingMessageImageDark.style.display = 'flex'
-    missingMessageImageDark.style.visibility = 'visible'
-    missingMessageImageLight.style.visibility = 'hidden'
+    if (!window.matchMedia('(max-width: 768px)').matches) {
+      missingMessageImageLight.style.display = 'none'
+      missingMessageImageDark.style.display = 'flex'
+      missingMessageImageDark.style.visibility = 'visible'
+      missingMessageImageLight.style.visibility = 'hidden'
+    }
 
     const isToastExist = document.querySelector('.toast')
 
