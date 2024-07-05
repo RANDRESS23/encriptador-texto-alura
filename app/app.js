@@ -109,15 +109,16 @@ const setEnabledDecryptButton = () => {
 
 document.addEventListener('click', (e) => {
   if (e.target === encryptButton) {
-    // const message = textareaMessage.value
-    // const newMessage = encryptMessage({ message })
+    const message = textareaMessage.value
+    const newMessage = encryptMessage({ message })
 
-    // missingMessageContainer.style.display = 'none'
-    // encryptedMessageFoundContainer.style.display = 'flex'
+    missingMessageContainer.style.display = 'none'
+    encryptedMessageFoundContainer.style.display = 'flex'
 
-    // textAreaEncryptedMessage.value = newMessage
-    // textareaMessage.value = ''
-    showToast('Esta es una alerta personalizada')
+    textAreaEncryptedMessage.value = newMessage
+    textareaMessage.value = ''
+
+    showToast('¡Mensaje encriptado exitosamente!')
   }
   
   if (e.target === decryptButton) {
@@ -129,11 +130,15 @@ document.addEventListener('click', (e) => {
 
     textAreaEncryptedMessage.value = newMessage
     textareaMessage.value = ''
+
+    showToast('¡Mensaje desencriptado exitosamente!')
   }
 
   if (e.target === copyButton) {
     textAreaEncryptedMessage.select()
     document.execCommand('copy')
+
+    showToast('¡Mensaje copiado exitosamente!')
   }
 
   if (e.target === buttonThemeDark) {
@@ -247,10 +252,6 @@ textareaMessage.addEventListener('keyup', (e) => {
   }
 })
 
-textAreaEncryptedMessage.addEventListener('keyup', (e) => {
-  e.preventDefault()
-})
-
 document.addEventListener('DOMContentLoaded', () => {
   textareaMessage.classList.add('color-danger')
   exclamationMessage.classList.add('color-danger')
@@ -272,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const showToast = (message) => {
   const isToastExist = document.querySelector('.toast')
     
-  if (isToastExist) return
+  if (isToastExist?.textContent === message) return
 
   const toastContainer = document.getElementById('toast-container')
   const toast = document.createElement('div')
