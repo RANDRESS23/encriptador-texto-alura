@@ -17,7 +17,7 @@ const exclamationMessage = document.getElementById('exclamationMessage')
 const missingMessageContainer = document.getElementById('missingMessageContainer')
 const encryptedMessageFoundContainer = document.getElementById('encryptedMessageFoundContainer')
 
-const body = document.body;
+const body = document.body
 const header = document.querySelector('.header')
 const footer = document.querySelector('.footer')
 const encryptedMessageContainer = document.querySelector('.encrypted-message-container')
@@ -109,14 +109,15 @@ const setEnabledDecryptButton = () => {
 
 document.addEventListener('click', (e) => {
   if (e.target === encryptButton) {
-    const message = textareaMessage.value
-    const newMessage = encryptMessage({ message })
+    // const message = textareaMessage.value
+    // const newMessage = encryptMessage({ message })
 
-    missingMessageContainer.style.display = 'none'
-    encryptedMessageFoundContainer.style.display = 'flex'
+    // missingMessageContainer.style.display = 'none'
+    // encryptedMessageFoundContainer.style.display = 'flex'
 
-    textAreaEncryptedMessage.value = newMessage
-    textareaMessage.value = ''
+    // textAreaEncryptedMessage.value = newMessage
+    // textareaMessage.value = ''
+    showToast('Esta es una alerta personalizada')
   }
   
   if (e.target === decryptButton) {
@@ -136,79 +137,97 @@ document.addEventListener('click', (e) => {
   }
 
   if (e.target === buttonThemeDark) {
-    body.classList.add('body-dark');
-    header.classList.add('header-dark');
-    footer.classList.add('footer-dark');
-    encryptedMessageContainer.classList.add('encrypted-message-container-dark');
-    missingMessageTitle1.classList.add('missing-message-title-1-dark');
-    missingMessageTitle2.classList.add('missing-message-title-2-dark');
-    decryptButton.classList.add('button-2-dark');
-    copyButton.classList.add('button-2-dark');
-    textareaMessage.classList.toggle('textarea-message-dark');
-    textAreaEncryptedMessage.classList.toggle('textarea-encrypted-message-dark');
-    exclamationMessage.classList.toggle('exclamation-message-dark');
-    buttonThemeDark.style.display = 'none';
-    buttonThemeLight.style.display = 'flex';
-    buttonThemeDark.style.visibility = 'hidden';
-    buttonThemeLight.style.visibility = 'visible';
+    body.classList.add('body-dark')
+    header.classList.add('header-dark')
+    footer.classList.add('footer-dark')
+    encryptedMessageContainer.classList.add('encrypted-message-container-dark')
+    missingMessageTitle1.classList.add('missing-message-title-1-dark')
+    missingMessageTitle2.classList.add('missing-message-title-2-dark')
+    decryptButton.classList.add('button-2-dark')
+    copyButton.classList.add('button-2-dark')
+    textareaMessage.classList.toggle('textarea-message-dark')
+    textAreaEncryptedMessage.classList.toggle('textarea-encrypted-message-dark')
+    exclamationMessage.classList.toggle('exclamation-message-dark')
+    buttonThemeDark.style.display = 'none'
+    buttonThemeLight.style.display = 'flex'
+    buttonThemeDark.style.visibility = 'hidden'
+    buttonThemeLight.style.visibility = 'visible'
     
-    logoDark.style.display = 'none';
-    logoLight.style.display = 'flex';
-    logoDark.style.visibility = 'hidden';
-    logoLight.style.visibility = 'visible';
+    logoDark.style.display = 'none'
+    logoLight.style.display = 'flex'
+    logoDark.style.visibility = 'hidden'
+    logoLight.style.visibility = 'visible'
     
-    iconGitHubDark.style.display = 'none';
-    iconGitHubLight.style.display = 'flex';
-    iconGitHubDark.style.visibility = 'hidden';
-    iconGitHubLight.style.visibility = 'visible';
+    iconGitHubDark.style.display = 'none'
+    iconGitHubLight.style.display = 'flex'
+    iconGitHubDark.style.visibility = 'hidden'
+    iconGitHubLight.style.visibility = 'visible'
     
-    exclamationIconDark.style.display = 'none';
-    exclamationIconLight.style.display = 'flex';
-    exclamationIconDark.style.visibility = 'hidden';
-    exclamationIconLight.style.visibility = 'visible';
+    exclamationIconDark.style.display = 'none'
+    exclamationIconLight.style.display = 'flex'
+    exclamationIconDark.style.visibility = 'hidden'
+    exclamationIconLight.style.visibility = 'visible'
     
-    missingMessageImageDark.style.display = 'none';
-    missingMessageImageLight.style.display = 'flex';
-    missingMessageImageDark.style.visibility = 'hidden';
-    missingMessageImageLight.style.visibility = 'visible';
+    missingMessageImageDark.style.display = 'none'
+    missingMessageImageLight.style.display = 'flex'
+    missingMessageImageDark.style.visibility = 'hidden'
+    missingMessageImageLight.style.visibility = 'visible'
+
+    const isToastExist = document.querySelector('.toast')
+    
+    if (isToastExist) {
+      const iconToast = document.querySelector('.icon-toast')
+
+      isToastExist.classList.add('toast-dark')
+      iconToast.src = 'assets/check-icon-dark.svg'
+    }
   }
   
   if (e.target === buttonThemeLight) {
-    body.classList.remove('body-dark');
-    header.classList.remove('header-dark');
-    footer.classList.remove('footer-dark');
-    encryptedMessageContainer.classList.remove('encrypted-message-container-dark');
-    missingMessageTitle1.classList.remove('missing-message-title-1-dark');
-    missingMessageTitle2.classList.remove('missing-message-title-2-dark');
-    decryptButton.classList.remove('button-2-dark');
-    copyButton.classList.remove('button-2-dark');
-    textareaMessage.classList.toggle('textarea-message-dark');
-    textAreaEncryptedMessage.classList.toggle('textarea-encrypted-message-dark');
-    exclamationMessage.classList.toggle('exclamation-message-dark');
-    buttonThemeLight.style.display = 'none';
-    buttonThemeDark.style.display = 'flex';
-    buttonThemeDark.style.visibility = 'visible';
-    buttonThemeLight.style.visibility = 'hidden';
+    body.classList.remove('body-dark')
+    header.classList.remove('header-dark')
+    footer.classList.remove('footer-dark')
+    encryptedMessageContainer.classList.remove('encrypted-message-container-dark')
+    missingMessageTitle1.classList.remove('missing-message-title-1-dark')
+    missingMessageTitle2.classList.remove('missing-message-title-2-dark')
+    decryptButton.classList.remove('button-2-dark')
+    copyButton.classList.remove('button-2-dark')
+    textareaMessage.classList.toggle('textarea-message-dark')
+    textAreaEncryptedMessage.classList.toggle('textarea-encrypted-message-dark')
+    exclamationMessage.classList.toggle('exclamation-message-dark')
+    buttonThemeLight.style.display = 'none'
+    buttonThemeDark.style.display = 'flex'
+    buttonThemeDark.style.visibility = 'visible'
+    buttonThemeLight.style.visibility = 'hidden'
     
-    logoLight.style.display = 'none';
-    logoDark.style.display = 'flex';
-    logoDark.style.visibility = 'visible';
-    logoLight.style.visibility = 'hidden';
+    logoLight.style.display = 'none'
+    logoDark.style.display = 'flex'
+    logoDark.style.visibility = 'visible'
+    logoLight.style.visibility = 'hidden'
     
-    iconGitHubLight.style.display = 'none';
-    iconGitHubDark.style.display = 'flex';
-    iconGitHubDark.style.visibility = 'visible';
-    iconGitHubLight.style.visibility = 'hidden';
+    iconGitHubLight.style.display = 'none'
+    iconGitHubDark.style.display = 'flex'
+    iconGitHubDark.style.visibility = 'visible'
+    iconGitHubLight.style.visibility = 'hidden'
     
-    exclamationIconLight.style.display = 'none';
-    exclamationIconDark.style.display = 'flex';
-    exclamationIconDark.style.visibility = 'visible';
-    exclamationIconLight.style.visibility = 'hidden';
+    exclamationIconLight.style.display = 'none'
+    exclamationIconDark.style.display = 'flex'
+    exclamationIconDark.style.visibility = 'visible'
+    exclamationIconLight.style.visibility = 'hidden'
     
-    missingMessageImageLight.style.display = 'none';
-    missingMessageImageDark.style.display = 'flex';
-    missingMessageImageDark.style.visibility = 'visible';
-    missingMessageImageLight.style.visibility = 'hidden';
+    missingMessageImageLight.style.display = 'none'
+    missingMessageImageDark.style.display = 'flex'
+    missingMessageImageDark.style.visibility = 'visible'
+    missingMessageImageLight.style.visibility = 'hidden'
+
+    const isToastExist = document.querySelector('.toast')
+
+    if (isToastExist) {
+      const iconToast = document.querySelector('.icon-toast')
+
+      isToastExist.classList.remove('toast-dark')
+      iconToast.src = 'assets/check-icon-light.svg'
+    }
   }
 })
 
@@ -216,13 +235,13 @@ textareaMessage.addEventListener('keyup', (e) => {
   const message = e.target.value
 
   if (!validateMessage({ message })) {
-    textareaMessage.classList.add('color-danger');
-    exclamationMessage.classList.add('color-danger');
+    textareaMessage.classList.add('color-danger')
+    exclamationMessage.classList.add('color-danger')
     setDisabledEncryptButton()
     setDisabledDecryptButton()
   } else {
-    textareaMessage.classList.remove('color-danger');
-    exclamationMessage.classList.remove('color-danger');
+    textareaMessage.classList.remove('color-danger')
+    exclamationMessage.classList.remove('color-danger')
     setEnabledEncryptButton()
     setEnabledDecryptButton()
   }
@@ -233,19 +252,45 @@ textAreaEncryptedMessage.addEventListener('keyup', (e) => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-  textareaMessage.classList.add('color-danger');
-  exclamationMessage.classList.add('color-danger');
+  textareaMessage.classList.add('color-danger')
+  exclamationMessage.classList.add('color-danger')
   encryptedMessageFoundContainer.style.display = 'none'
-  buttonThemeLight.style.visibility = 'hidden';
-  buttonThemeLight.style.display = 'none';
-  logoLight.style.visibility = 'hidden';
-  logoLight.style.display = 'none';
-  iconGitHubLight.style.visibility = 'hidden';
-  iconGitHubLight.style.display = 'none';
-  exclamationIconLight.style.visibility = 'hidden';
-  exclamationIconLight.style.display = 'none';
-  missingMessageImageLight.style.visibility = 'hidden';
-  missingMessageImageLight.style.display = 'none';
+  buttonThemeLight.style.visibility = 'hidden'
+  buttonThemeLight.style.display = 'none'
+  logoLight.style.visibility = 'hidden'
+  logoLight.style.display = 'none'
+  iconGitHubLight.style.visibility = 'hidden'
+  iconGitHubLight.style.display = 'none'
+  exclamationIconLight.style.visibility = 'hidden'
+  exclamationIconLight.style.display = 'none'
+  missingMessageImageLight.style.visibility = 'hidden'
+  missingMessageImageLight.style.display = 'none'
   setDisabledEncryptButton()
   setDisabledDecryptButton()
 })
+
+const showToast = (message) => {
+  const isToastExist = document.querySelector('.toast')
+    
+  if (isToastExist) return
+
+  const toastContainer = document.getElementById('toast-container')
+  const toast = document.createElement('div')
+  const span = document.createElement('span')
+  const check = document.createElement('img')
+  check.src = body.classList.contains('body-dark') ? 'assets/check-icon-dark.svg' : 'assets/check-icon-light.svg'
+  toast.className = 'toast'
+
+  if (body.classList.contains('body-dark')) toast.classList.add('toast-dark')
+
+  check.className = 'icon-toast'
+  span.textContent = `${message}`
+
+  toast.appendChild(check)
+  toast.appendChild(span)
+  toastContainer.appendChild(toast)
+
+  setTimeout(() => {
+    toast.remove()
+  }, 3000)
+}
