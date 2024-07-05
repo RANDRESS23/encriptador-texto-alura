@@ -1,5 +1,6 @@
 const encryptButton = document.getElementById('encryptButton')
 const decryptButton = document.getElementById('decryptButton')
+const copyButton = document.getElementById('copyButton')
 const textareaMessage = document.getElementById('textareaMessage')
 const textAreaEncryptedMessage = document.getElementById('textAreaEncryptedMessage')
 const exclamationMessage = document.getElementById('exclamationMessage')
@@ -110,6 +111,11 @@ document.addEventListener('click', (e) => {
 
     textAreaEncryptedMessage.value = newMessage
     textareaMessage.value = ''
+  }
+
+  if (e.target === copyButton) {
+    textAreaEncryptedMessage.select()
+    document.execCommand('copy')
   }
 })
 
