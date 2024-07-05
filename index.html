@@ -12,7 +12,22 @@
       <ul>
         <li>
           <a href="/">
-            <img src="./assets/logo.svg" alt="Logo de Alura" class="logo">
+            <img src="./assets/logo-light.svg" alt="Logo de Alura" class="logo" id="logoDark">
+            <img src="./assets/logo-dark.svg" alt="Logo de Alura" class="logo" id="logoLight">
+          </a>
+        </li>
+      </ul>
+      <ul class="icons-header-container">
+        <li>
+          <button class="button-icon-header">
+            <img src="./assets/moon-icon.svg" alt="Icono de lunea" class="icon-header" id="buttonThemeDark">
+            <img src="./assets/sun-icon.svg" alt="Icono de sol" class="icon-header" id="buttonThemeLight">
+          </button>
+        </li>
+        <li>
+          <a href="https://github.com/RANDRESS23/encriptador-texto-alura" target="_blank">
+            <img src="./assets/github-light-icon.svg" alt="Logo de GitHub" class="icon-header" id="iconGitHubDark">
+            <img src="./assets/github-dark-icon.svg" alt="Logo de GitHub" class="icon-header" id="iconGitHubLight">
           </a>
         </li>
       </ul>
@@ -23,7 +38,8 @@
       <textarea id="textareaMessage" placeholder="Ingrese el texto aquí" class="textarea-message"></textarea>
       <div class="footer-textarea-container">
         <div class="exclamation-container">
-          <img src="./assets/exclamation-circle.svg" alt="Simbolo de exclamación">
+          <img src="./assets/exclamation-circle-light.svg" alt="Simbolo de exclamación" id="exclamationIconDark">
+          <img src="./assets/exclamation-circle-dark.svg" alt="Simbolo de exclamación" id="exclamationIconLight">
           <p class="exclamation-message" id="exclamationMessage">Solo letras minúsculas y sin acentos</p>
         </div>
         <div class="buttons-container">
@@ -34,7 +50,8 @@
     </section>
     <section class="encrypted-message-container">
       <section class="missing-message-container" id="missingMessageContainer">
-        <img src="./assets/missing-message.webp" alt="Ningún mensaje de encontrado" class="image-missing-message">
+        <img src="./assets/missing-message-light.webp" alt="Ningún mensaje de encontrado" class="image-missing-message" id="missingMessageImageDark">
+        <img src="./assets/missing-message-dark.webp" alt="Ningún mensaje de encontrado" class="image-missing-message" id="missingMessageImageLight">
         <p class="missing-message-title-1">Ningún mensaje fue encontrado</p>
         <p class="missing-message-title-2">Ingresa el texto que desees encriptar o desencriptar.</p>
       </section>
