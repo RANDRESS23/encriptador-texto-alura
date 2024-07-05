@@ -117,6 +117,10 @@ document.addEventListener('click', (e) => {
 
     textAreaEncryptedMessage.value = newMessage
     textareaMessage.value = ''
+    textareaMessage.classList.add('color-danger')
+    exclamationMessage.classList.add('color-danger')
+    setDisabledEncryptButton()
+    setDisabledDecryptButton()
 
     showToast('¡Mensaje encriptado exitosamente!')
   }
@@ -130,6 +134,10 @@ document.addEventListener('click', (e) => {
 
     textAreaEncryptedMessage.value = newMessage
     textareaMessage.value = ''
+    textareaMessage.classList.add('color-danger')
+    exclamationMessage.classList.add('color-danger')
+    setDisabledEncryptButton()
+    setDisabledDecryptButton()
 
     showToast('¡Mensaje desencriptado exitosamente!')
   }
