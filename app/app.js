@@ -19,6 +19,7 @@ const encryptedMessageFoundContainer = document.getElementById('encryptedMessage
 
 const body = document.body;
 const header = document.querySelector('.header')
+const footer = document.querySelector('.footer')
 const encryptedMessageContainer = document.querySelector('.encrypted-message-container')
 const missingMessageTitle1 = document.querySelector('.missing-message-title-1')
 const missingMessageTitle2 = document.querySelector('.missing-message-title-2')
@@ -137,6 +138,7 @@ document.addEventListener('click', (e) => {
   if (e.target === buttonThemeDark) {
     body.classList.add('body-dark');
     header.classList.add('header-dark');
+    footer.classList.add('footer-dark');
     encryptedMessageContainer.classList.add('encrypted-message-container-dark');
     missingMessageTitle1.classList.add('missing-message-title-1-dark');
     missingMessageTitle2.classList.add('missing-message-title-2-dark');
@@ -174,6 +176,7 @@ document.addEventListener('click', (e) => {
   if (e.target === buttonThemeLight) {
     body.classList.remove('body-dark');
     header.classList.remove('header-dark');
+    footer.classList.remove('footer-dark');
     encryptedMessageContainer.classList.remove('encrypted-message-container-dark');
     missingMessageTitle1.classList.remove('missing-message-title-1-dark');
     missingMessageTitle2.classList.remove('missing-message-title-2-dark');

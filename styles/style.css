@@ -31,6 +31,9 @@ body {
   height: 100vh;
   background-color: var(--light-blue-100);
   transition: .3s ease all;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .body-dark {
@@ -78,7 +81,7 @@ body {
 }
 
 .button-icon-header {
-  padding: 2px;
+  padding: 5px;
   width: 30px;
   background-color: transparent;
 }
@@ -94,7 +97,7 @@ body {
 
 .main {
   width: 80%;
-  height: calc(100vh - 70px);
+  height: calc(78vh);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -240,7 +243,7 @@ button {
 }
 
 .image-missing-message {
-  width: 100%;
+  width: 90%;
 }
 
 .missing-message-title-1 {
@@ -304,4 +307,32 @@ button {
 
 .textarea-encrypted-message-dark::placeholder {
   color: var(--white);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--dark-blue-300);
+  transition: .3s ease all;
+}
+
+.footer-dark {
+  color: var(--white);
+}
+
+.text-footer {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.text-footer-name {
+  font-weight: 700;
+}
+
+.love-icon {
+  width: 20px;
 }
