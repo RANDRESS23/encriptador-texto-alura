@@ -264,6 +264,22 @@ textareaMessage.addEventListener('keyup', (e) => {
   }
 })
 
+textareaMessage.addEventListener('paste', (e) => {
+  const message = (e.clipboardData || window.clipboardData).getData('text');
+
+  if (!validateMessage({ message })) {
+    textareaMessage.classList.add('color-danger')
+    exclamationMessage.classList.add('color-danger')
+    setDisabledEncryptButton()
+    setDisabledDecryptButton()
+  } else {
+    textareaMessage.classList.remove('color-danger')
+    exclamationMessage.classList.remove('color-danger')
+    setEnabledEncryptButton()
+    setEnabledDecryptButton()
+  }
+})
+
 document.addEventListener('DOMContentLoaded', () => {
   textareaMessage.classList.add('color-danger')
   exclamationMessage.classList.add('color-danger')
