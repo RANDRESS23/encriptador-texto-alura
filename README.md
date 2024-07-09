@@ -42,20 +42,15 @@ La letra "u" es convertida para "ufat"
 
 ### Vista de escritorio
 
-![MacBook Pro-1720488406009](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/b6e4ba97-4ac7-428d-86a9-ad50cd84c035)
+![image](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/8bbb5d7e-fc67-4f83-be20-476d81e1462b)
 
-![MacBook Pro-1720488414128](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/587f066d-c1fe-4739-a880-b07180ca5920)
+![image](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/b1655442-e4c5-40d4-940c-a78c794c91a0)
 
 ### Vista de tablet
 
-<p align="center">
-  <img src="https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/36fcc053-5127-4162-8b08-8684c13cdbf7" alt="Ejemplo de imagen" width="350" style="margin-right: 30px;">
-  <img src="https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/da1a661c-0e18-45a4-8e0a-c398e74c6abd" alt="Ejemplo de imagen" width="350">
-</p>
+![image](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/d371c38d-5f4e-46e2-ab4b-15ef16c2162c)
 
 ### Vista de celular
 
-<p align="center">
-  <img src="https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/47204ef0-0f0f-4399-9e82-55cc327f2894" alt="Ejemplo de imagen" width="200" style="margin-right: 30px;">
-  <img src="https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/6e8c2512-62f8-4d5d-9f78-9f42da8b5d73" alt="Ejemplo de imagen" width="200">  
-</p>
+![image](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/d308ce91-9620-4b67-bbc0-a2fbe21dc840)
+
