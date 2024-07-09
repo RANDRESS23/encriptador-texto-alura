@@ -32,7 +32,28 @@ gaitober" => "gato"
 ```
 La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
+La letra "a" es convertida ![MacBook Pro-1720488406009](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/cb65fe98-d48b-4798-8b58-3da8f0bb4cd1)
+para "ai"
 La letra "o" es convertida para "ober"
 La letra "u" es convertida para "ufat"
 ```
+
+## Vistas de la aplicación web
+
+### Vista de escritorio
+
+![MacBook Pro-1720488406009](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/b6e4ba97-4ac7-428d-86a9-ad50cd84c035)
+
+![MacBook Pro-1720488414128](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/587f066d-c1fe-4739-a880-b07180ca5920)
+
+### Vista de tablet
+
+![iPad-1720488501656](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/36fcc053-5127-4162-8b08-8684c13cdbf7)
+
+![iPad-1720488507971](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/da1a661c-0e18-45a4-8e0a-c398e74c6abd)
+
+### Vista de celular
+
+![iPhone 12 Pro-1720488561460](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/47204ef0-0f0f-4399-9e82-55cc327f2894)
+
+![iPhone 12 Pro-1720488566971](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/6e8c2512-62f8-4d5d-9f78-9f42da8b5d73)
