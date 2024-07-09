@@ -42,15 +42,21 @@ La letra "u" es convertida para "ufat"
 
 ### Vista de escritorio
 
+A continuación podrás visualizar la aplicación web desde la vista de escritorio.
+
 ![image](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/8bbb5d7e-fc67-4f83-be20-476d81e1462b)
 
 ![image](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/b1655442-e4c5-40d4-940c-a78c794c91a0)
 
 ### Vista de tablet
 
+A continuación podrás visualizar la aplicación web desde la vista de tablet.
+
 ![image](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/d371c38d-5f4e-46e2-ab4b-15ef16c2162c)
 
 ### Vista de celular
+
+A continuación podrás visualizar la aplicación web desde la vista de celular.
 
 ![image](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/d308ce91-9620-4b67-bbc0-a2fbe21dc840)
 
