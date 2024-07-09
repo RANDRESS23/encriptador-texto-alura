@@ -32,8 +32,7 @@ gaitober" => "gato"
 ```
 La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
-La letra "a" es convertida ![MacBook Pro-1720488406009](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/cb65fe98-d48b-4798-8b58-3da8f0bb4cd1)
-para "ai"
+La letra "a" es convertida para "ai"
 La letra "o" es convertida para "ober"
 La letra "u" es convertida para "ufat"
 ```
