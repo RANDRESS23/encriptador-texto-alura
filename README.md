@@ -48,7 +48,7 @@ La letra "u" es convertida para "ufat"
 
 ### Vista de tablet
 
-<img src="[https://example.com/imagen.jpg](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/36fcc053-5127-4162-8b08-8684c13cdbf7)" alt="Ejemplo de imagen" width="50">
+<img src="https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/36fcc053-5127-4162-8b08-8684c13cdbf7" alt="Ejemplo de imagen" width="50">
 
 ![iPad-1720488507971](https://github.com/RANDRESS23/encriptador-texto-alura/assets/115477371/da1a661c-0e18-45a4-8e0a-c398e74c6abd)
 
