@@ -146,6 +146,9 @@ document.addEventListener('click', (e) => {
     textAreaEncryptedMessage.select()
     document.execCommand('copy')
 
+    missingMessageContainer.style.display = 'flex'
+    encryptedMessageFoundContainer.style.display = 'none'
+
     showToast('¡Mensaje copiado exitosamente!')
   }
 
